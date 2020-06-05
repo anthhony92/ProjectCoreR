@@ -1,0 +1,56 @@
+﻿@model ProjectCore.DAL.Models.States
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>States</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="/States/Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+
+                <div class="col-md-12">
+
+                    @Html.LabelFor(x => x.Name)
+                    @Html.EditorFor(x => x.Name, new { htmlAtributtes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-12">
+
+                    @Html.LabelFor(x => x.Active)
+                    @Html.EditorFor(x => x.Active, new { htmlAtributtes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(x => x.Active, "", new { @class = "text-danger" })
+
+
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <div class="form-group">
+        <div class="col-md-12">
+
+            @Html.ActionLink(" ", //name
+            "Index", //action
+            "States",
+            null,// controller name
+            new {@class = "btn btn-primary fas fa-arrow-circle-left"})
+
+        </div>
+    </div>
+</div>
+
