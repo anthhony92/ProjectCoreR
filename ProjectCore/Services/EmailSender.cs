@@ -25,7 +25,7 @@ namespace ProjectCore.Services
             var client = new SendGridClient(apiKey);
             var msg = new SendGridMessage()
             {
-                From = new EmailAddress("dannyagreda98@gmail.com", "Danny Joelle"),
+                From = new EmailAddress("anto12395@hotmail.com", "antonio de la cruz"),
                 Subject = subject,
                 PlainTextContent = message,
                 HtmlContent = message

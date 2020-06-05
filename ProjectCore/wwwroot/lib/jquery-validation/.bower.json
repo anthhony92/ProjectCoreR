@@ -6,7 +6,7 @@
     "url": "git://github.com/jquery-validation/jquery-validation.git"
   },
   "authors": [
-    "Jörn Zaefferer <joern.zaefferer@gmail.com>"
+    "Jörn Zaefferer <anto12395@hotmail.com>"
   ],
   "description": "Form validation made easy",
   "main": "dist/jquery.validate.js",
